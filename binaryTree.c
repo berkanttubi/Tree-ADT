@@ -323,17 +323,21 @@ int CountLeaves(Tree t){
 
 int TreeHeight(Tree t){
 
+    int left=0;
+    int right=0;
+
      if (t == NULL) {
         return -1;
     }
 
-    int lefth = TreeHeight(t->left);
-    int righth = TreeHeight(t->right);
+    left=1+TreeHeight(t->left);
+    right=1+TreeHeight(t->right);
 
-    if (lefth > righth) {
-        return lefth + 1;
-    } else {
-        return righth + 1;
+    if (left > right) {
+        return left;
+    } 
+    else {
+        return right;
     }
 
 }
