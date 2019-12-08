@@ -2,7 +2,7 @@
 Many functions about Binary Search Tree ADT
 
 
-Tree CreateTree(void);
+Tree CreateTree(void); \n
 Tree MakeEmptyTree(Tree);
 Tree InsertElement(int, Tree);
 void DisplayTree(Tree,int);
